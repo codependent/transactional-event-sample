@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      uri: xxx
+
+logging:
+  level:
+    org:
+      springframework:
+        transaction: trace
