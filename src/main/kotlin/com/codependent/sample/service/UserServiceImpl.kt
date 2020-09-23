@@ -15,7 +15,6 @@ class UserServiceImpl(private val userRepository: UserRepository) : UserService 
 
     private val logger = LoggerFactory.getLogger(javaClass)
 
-    @Transactional
     override fun create(user: User): Mono<User> {
         logger.info("create() isSyncActive {} - isTxActive {}",
                 TransactionSynchronizationManager.isSynchronizationActive(),
