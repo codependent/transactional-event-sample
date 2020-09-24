@@ -1,3 +1,5 @@
 package com.codependent.sample.event
 
-data class UserCreatedEvent(private val name: String)
+import com.codependent.sample.domain.User
+
+data class UserCreatedEvent(val user: User)
