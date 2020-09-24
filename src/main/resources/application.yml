@@ -7,6 +7,4 @@ logging:
   level:
     org:
       springframework:
-        transaction: trace
-    com:
-      mongodb: debug
+        data: trace
